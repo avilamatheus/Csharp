@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExFix-Interfaces", "ExFix-Interfaces\ExFix-Interfaces.csproj", "{76E71D45-F888-4B5D-A9D0-391354C4806B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E71D45-F888-4B5D-A9D0-391354C4806B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E71D45-F888-4B5D-A9D0-391354C4806B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E71D45-F888-4B5D-A9D0-391354C4806B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E71D45-F888-4B5D-A9D0-391354C4806B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25ED1CFD-C6F0-4685-9CD6-5F09760178B4}
+	EndGlobalSection
+EndGlobal
