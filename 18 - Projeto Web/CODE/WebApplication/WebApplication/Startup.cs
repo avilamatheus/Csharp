@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using WebApplication.Models;
 using WebApplication.Data;
 using WebApplication.Services;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace WebApplication
 {
@@ -44,11 +46,21 @@ namespace WebApplication
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
             services.AddScoped<DepartmentService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingservice)
         {
+            var enUS = new CultureInfo("en-US");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(enUS),
+                SupportedCultures = new List<CultureInfo> { enUS },
+                SupportedUICultures = new List<CultureInfo> { enUS }
+            };
+
+            app.UseRequestLocalization(localizationOptions);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
